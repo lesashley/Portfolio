@@ -32,7 +32,6 @@ header{
   background-color: #e7e7e7;
 }
 
-
 #fondo{
   height: 100vh;
   background-size: cover;
@@ -43,16 +42,58 @@ header{
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  -webkit-animation:100s scroll infinite linear;
+  -moz-animation:100s scroll infinite linear;
+  -o-animation:100s scroll infinite linear;
+  -ms-animation:100s scroll infinite linear;
+  animation:100s scroll infinite linear;
+  top:0;
+  left:0;
+  width:100%;
 }
+
+@-webkit-keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+
+@-moz-keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+
+@-o-keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+
+@-ms-keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+
+@keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+
 .name{
   text-align: center;
   align-self: center;
   font-size: 10rem;
   color: #fff;
     font-family: 'Dosis', sans-serif;
-    text-shadow:
-    4px 4px 0px #b682a9,
-    7px 7px 0px #8e7379 ;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+    // text-shadow:
+    // 4px 4px 0px #b682a9,
+    // 7px 7px 0px #8e7379 ;
 }
 /**/
 .typewriter h1 {
