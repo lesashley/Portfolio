@@ -31,7 +31,7 @@ header {
 #fondo {
   height: 100vh;
   background-size: cover;
-  background-image: url(../img/fondo2.jpg);
+  background-image: url(../img/fondo.jpeg);
   background-attachment: fixed;
   background-position: 10% 30%;
   display: flex;
@@ -42,7 +42,7 @@ header {
 .name {
   text-align: center;
   align-self: center;
-  font-size: 14rem;
+  font-size: 10rem;
   color: #fff;
   font-family: 'Dosis', sans-serif;
   text-shadow: 4px 4px 0px #b682a9, 7px 7px 0px #8e7379; }
@@ -107,7 +107,7 @@ header {
 #description {
   padding-top: 40px;
   background-color: #fff;
-  height: 100vh; }
+  height: 70vh; }
 
 .img-me {
   display: inline-block; }
