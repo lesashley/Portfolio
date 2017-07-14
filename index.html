@@ -33,36 +33,52 @@
                 <li><a href="#projects">PORTAFOLIO</a></li>
                 <li><a href="#contact">CONTACTO</a></li>
               </ul>
+              <ul class="nav navbar-nav pull-right ">
+                <li class="pull-right"><a href="#"><img src="img/logo-white.png" alt=""></a></li>
+              </ul>
             </div>
           </div>
         </nav>
       </header>
-      <section id="fondo" class="container-fluid active">
+      <section id="fondo" class="home container-fluid active">
         <div class="row">
-          <p class="col-xs-12 name">LESLIE AVENDAÑO</p>
-          <!-- <div class="intro col-xs-12">
-            <div class="typewriter col-md-5 col-xs-12">
+          <p class="col-xs-12 home__name">LESLIE AVENDAÑO</p>
+          <div class="intro ">
+            <div class="typewriter ">
               <h1>Desarrolladora Web Front End</h1>
             </div>
-          </div> -->
-          <div class="col-xs-12 box-button">
-            <button type="button" class="btn btn-home hvr-buzz-out"><a href="https://www.linkedin.com/in/leslieavendano/" target="auto_blank">LinkedIn</a></button>
-            <button type="button" class="btn btn-home hvr-buzz-out"><a href="https://github.com/lesashley" target="auto_blank">GitHub</a></button>
+          </div>
+          <div class="col-xs-12 home__button">
+            <button type="button" class="btn home__button--bg hvr-buzz-out"><a href="https://www.linkedin.com/in/leslieavendano/" target="auto_blank">LinkedIn</a></button>
+            <button type="button" class="btn home__button--bg hvr-buzz-out"><a href="https://github.com/lesashley" target="auto_blank">GitHub</a></button>
           </div>
         </div>
       </section>
-      <section id="description" class="container section">
+      <section id="description" class="description container">
         <div class="row">
           <div class="col-xs-12 ">
-            <div class="circleBehind">
-              <h1  class="animated slideInLeft title-section hvr-underline-from-left">SOBRE MÍ</h1>
+            <div class="description__title">
+              <h2  class="animated slideInLeft hvr-underline-from-left">SOBRE MÍ</h2>
             </div>
-            <div class=" col-xs-12 col-md-4 img-me">
-              <img src="img/img-leslie.jpg" alt="" class="">
+            <div class=" col-xs-12 col-md-4 description__img">
+              <img src="img/img-leslie.jpg" alt="" class="img-circle">
             </div>
-            <div class="col-xs-12 col-md-7 text-me">
+            <div class="col-xs-12 col-md-7 description__text">
               <p>¡Hola! Mi nombre es Leslie y soy Desarrolladora web Front End, me apasiona la programación y el querer seguir siempre aprendiendo más sobre nuevas tecnologías. Soy creativa, responsable y autodidacta. Siempre estoy dispuesta a nuevos retos y más aún si es para aprender cosas nuevas. Mi interés a mediano plazo es especializarme como desarrolladora Back End, seguir aprendiendo sobre mi trabajo y estar al día en este rubro.</p>
             </div>
+            <div class="col-xs-12 description__skills">
+              <h2 class="animated slideInLeft hvr-underline-from-left">SKILLS</h2>
+            </div>
+            <!-- <div class="col-xs-12 description__skills-item">
+              <div class="col-xs-3"><img src="img/skills/html5.png" alt="" class="img-responsive"></div>
+              <div class="col-xs-3"><img src="img/skills/css3.png" alt="" class="img-responsive"></div>
+              <div class="col-xs-3"><img src="img/skills/js.png" alt="" class="img-responsive"></div>
+              <div class="col-xs-3"><img src="img/skills/jquery.gif" alt="" class="img-responsive"></div>
+              <div class="col-xs-3"><img src="img/skills/sass.png" alt="" class="img-responsive"></div>
+              <div class="col-xs-3"><img src="img/skills/bootstrap.png" alt="" class="img-responsive"></div>
+              <div class="col-xs-3"><img src="img/skills/materialize.png" alt="" class="img-responsive"></div>
+              <div class="col-xs-3"><img src="img/skills/github.png" alt="" class="img-responsive"></div>
+            </div> -->
           </div>
         </div>
       </section>
@@ -70,7 +86,7 @@
         <div class="container">
           <div class="row portafolio">
             <div class="col-xs-12">
-              <h2 class="title-section hvr-underline-from-left">PORTAFOLIO</h2>
+              <h2 class=" hvr-underline-from-left">PORTAFOLIO</h2>
             </div>
             <div class="col-xs-12 col-md-4 portafolio__item animated zoomIn hvr-float-shadow " data-toggle="modal" data-target="#myModal">
               <img src="img/labcar-portafolio.png" alt="" style="width:100%;">
@@ -116,24 +132,24 @@
           </div>
         </div>
       </section>
-      <section id="contact" class="container">
+      <section id="contact" class="contact container">
         <div class="row">
           <div class="col-xs-12">
-            <h2 class="animated slideInLeft title-section hvr-underline-from-left">CONTÁCTAME</h2>
+            <h2 class="animated slideInLefthvr-underline-from-left">CONTÁCTAME</h2>
           </div>
-          <div class="col-xs-6  center-block contacto">
+          <div class="col-xs-6 center-block contact__info">
             <h3 class="subtitle ">CONTACTO DIRECTO</h3>
             <p><i class="fa fa-envelope"></i>alopezleslie@gmail.com</p>
             <p><i class="fa fa-mobile"></i>993004598</p>
           </div>
-          <div class="col-xs-6  center-block redes">
+          <div class="col-xs-6  center-block contact__redes">
             <h3 class="subtitle ">REDES SOCIALES</h3>
             <ul>
               <li><a href="#" class="fa fa-github animated rotateIn"></a></li>
               <li><a href="#" class="fa fa-linkedin animated rotateIn"></a></li>
             </ul>
           </div>
-          <div class="col-xs-12 center-block  contacto-cv">
+          <div class="col-xs-12 center-block contact__cv">
             <h3 class="subtitle ">DESCARGA MI CV</h3>
             <button type="button" name="button" class="fa fa-download animated pulse infinite "> Descargar CV</button>
           </div>

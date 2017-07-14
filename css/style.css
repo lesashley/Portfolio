@@ -4,6 +4,23 @@
   padding: 0;
   box-sizing: border-box; }
 
+#fondo, .portafolio__item, #footer {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+h2 {
+  color: #2c2c2c;
+  letter-spacing: .05em;
+  font-family: 'Dosis', sans-serif;
+  margin: 30px 0 23px 0;
+  padding: 10px 0;
+  font-size: 5rem;
+  font-weight: bold; }
+
+h3 {
+  font-family: 'Dosis', sans-serif; }
+
 header {
   width: 100%;
   position: fixed;
@@ -12,31 +29,27 @@ header {
 .navbar-default {
   background-color: rgba(255, 255, 255, 0);
   border-color: rgba(255, 255, 255, 0); }
-
-.navbar-default .navbar-nav > li > a {
-  border-radius: 10px;
-  font-weight: bold;
-  color: white;
-  transition: all 0.5s ease; }
-
-.navbar-default .navbar-nav > li {
-  margin: 10px;
-  font-size: 1.5rem; }
-
-.navbar-default .navbar-nav.pullUpDown > li > a:hover {
-  color: #555;
-  border-radius: 10px;
-  background-color: #e7e7e7; }
+  .navbar-default .navbar-nav > li > a {
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    transition: all 0.5s ease; }
+  .navbar-default .navbar-nav > li {
+    margin: 10px;
+    font-size: 1.5rem; }
+  .navbar-default .navbar-nav.pullUpDown > li > a:hover {
+    color: #555;
+    border-radius: 10px;
+    background-color: #e7e7e7; }
+  .navbar-default img {
+    width: 50px; }
 
 #fondo {
-  height: 100vh;
   background-size: cover;
   background-image: url(../img/fondo.jpeg);
   background-attachment: fixed;
   background-position: 10% 30%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 100vh;
   flex-direction: column;
   -webkit-animation: 100s scroll infinite linear;
   -moz-animation: 100s scroll infinite linear;
@@ -62,13 +75,26 @@ header {
 @keyframes scroll {
   100% {
     background-position: 0px -3000px; } }
-.name {
+.home__name {
   text-align: center;
   align-self: center;
-  font-size: 10rem;
   color: #fff;
+  font-size: 10rem;
   font-family: 'Dosis', sans-serif;
   text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1); }
+.home__button {
+  margin: 0 auto;
+  text-align: center; }
+  .home__button--bg {
+    margin: 30px 10px;
+    background-color: rgba(121, 42, 62, 0.68);
+    border: 2px solid #792a3e;
+    font-weight: bold;
+    width: 150px; }
+    .home__button--bg a {
+      color: #fff;
+      font-size: 2rem;
+      text-decoration: none; }
 
 /**/
 .typewriter h1 {
@@ -80,7 +106,7 @@ header {
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: .15em;
-  /*typing 3.5s steps(40, end),*/ }
+  animation: read 7s steps(50) infinite alternate, blink-caret 0.75s step-end infinite alternate; }
 
 @keyframes read {
   from {
@@ -94,127 +120,62 @@ header {
   50% {
     border-color: #792a3e; } }
 /******/
-.box-button {
-  margin: 0 auto;
-  text-align: center; }
-
-.btn-home {
-  margin: 30px 10px;
-  background-color: rgba(121, 42, 62, 0.68);
-  border: 2px solid #792a3e;
-  font-weight: bold;
-  width: 150px;
-  font-size: 2rem; }
-
-.btn-home a {
-  color: #fff;
-  text-decoration: none; }
-
-.title-section {
-  color: #2c2c2c;
-  letter-spacing: .05em;
-  font-family: 'Dosis', sans-serif;
-  margin: 50px 0 23px 0;
-  font-size: 5rem;
-  font-weight: bold; }
-
-.title-section-w {
-  margin: 50px 0 23px 0;
-  font-family: 'Dosis', sans-serif;
-  color: #fff;
-  font-size: 5rem; }
-
-.subtitle {
-  font-family: 'Dosis', sans-serif; }
-
-#description {
-  padding-top: 40px;
-  background-color: #fff;
-  height: 70vh; }
-
-.img-me {
-  display: inline-block; }
-
-.img-me img {
-  border-radius: 50%;
-  width: 100%;
-  box-shadow: 10px 5px 6px 0 #DBCBC4; }
-
-.text-me {
-  float: left;
-  color: black;
-  font-size: 1.8rem; }
-
-.descripcion-img {
-  display: inline-block;
-  font-size: 1.3rem;
-  padding-top: 10px; }
-
-.icons-me {
-  height: 50px; }
-
-.img-rec {
-  width: 120px; }
+.description {
+  padding-bottom: 100px;
+  background-color: #fff; }
+  .description__img {
+    display: inline-block; }
+    .description__img img {
+      width: 80%;
+      box-shadow: 10px 5px 6px 0 #DBCBC4; }
+  .description__text {
+    float: left;
+    color: #000;
+    font-size: 1.8rem; }
+  .description__skills-item img {
+    width: 60%;
+    height: 120px;
+    margin: 20px 0; }
 
 #projects {
-  position: relative;
-  /*top: 100px;*/
   background-color: #DBCBC4;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  /*display: flex;
-  align-items: center;
-  justify-content: center;*/
   padding-bottom: 30px; }
 
 .portafolio__item {
   padding: 20px;
   text-align: center;
-  display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   transition: all 0.4s ease;
   cursor: zoom-in; }
+  .portafolio__item h3 {
+    font-weight: bold; }
 
-.portafolio__item h3 {
-  font-weight: bold; }
-
-#contact {
+.contact {
   padding-bottom: 20px; }
-
-#contact .center-block {
-  text-align: center; }
-
-.contacto i {
-  color: #792a3e;
-  margin-right: 5px;
-  font-size: 2rem; }
-
-.redes li {
-  list-style: none; }
-
-.redes li a {
-  text-decoration: none;
-  color: #792a3e;
-  margin-right: 5px;
-  font-size: 3rem; }
-
-.contacto-cv button {
-  border: 0;
-  padding: 15px;
-  color: #fff;
-  border-radius: 10px;
-  font-size: 1.8rem;
-  background-color: #792a3e; }
+  .contact .center-block {
+    text-align: center; }
+  .contact__info i {
+    color: #792a3e;
+    font-size: 2rem;
+    margin-right: 5px; }
+  .contact__redes li {
+    list-style: none; }
+    .contact__redes li a {
+      text-decoration: none;
+      color: #792a3e;
+      font-size: 3rem;
+      margin-right: 5px; }
+  .contact__cv button {
+    border: 0;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #792a3e;
+    color: #fff;
+    font-size: 1.8rem; }
 
 #footer {
   height: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   text-align: center;
   font-weight: bold;
   background-color: #4b4b4b;
