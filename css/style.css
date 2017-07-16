@@ -134,8 +134,7 @@ header {
     border-color: #792a3e; } }
 /******/
 .description {
-  padding-bottom: 100px;
-  background-color: #fff; }
+  padding-bottom: 100px; }
   .description__img {
     display: inline-block; }
     .description__img img {
@@ -156,6 +155,8 @@ header {
   background-color: #DBCBC4;
   padding-bottom: 30px; }
 
+.portafolio h2 {
+  margin-bottom: 0; }
 .portafolio__item {
   padding: 20px;
   text-align: center;
@@ -165,6 +166,17 @@ header {
   cursor: zoom-in; }
   .portafolio__item h3 {
     font-weight: bold; }
+
+.modal__btn {
+  text-align: center; }
+  .modal__btn button {
+    margin-top: 30px;
+    background-color: #792a3e; }
+    .modal__btn button a {
+      text-decoration: none;
+      color: #fff;
+      font-size: auto;
+      font-weight: bold; }
 
 .contact {
   padding-bottom: 20px; }
