@@ -9,13 +9,12 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/hover.css">
-    <link rel="stylesheet" type="text/css" href="css/jquery.fullpage.min.css" />
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   </head>
   <body>
-      <header>
+      <header id="header">
         <nav class="navbar navbar-default">
           <div class="container-fluid">
             <div class="navbar-header">
@@ -34,7 +33,7 @@
                 <li><a href="#contact">CONTACTO</a></li>
               </ul>
               <ul class="nav navbar-nav pull-right ">
-                <li class="pull-right"><a href="#"><img src="img/logo-white.png" alt=""></a></li>
+                <li class="pull-right"><a href="#"><img src="img/logo1-white.png" alt="" class="logo"><img src="img/logo1.png" alt="" class="logo-hidden"></a></li>
               </ul>
             </div>
           </div>
@@ -64,21 +63,22 @@
               <img src="img/img-leslie.jpg" alt="" class="img-circle">
             </div>
             <div class="col-xs-12 col-md-7 description__text">
-              <p>¡Hola! Mi nombre es Leslie y soy Desarrolladora web Front End, me apasiona la programación y el querer seguir siempre aprendiendo más sobre nuevas tecnologías. Soy creativa, responsable y autodidacta. Siempre estoy dispuesta a nuevos retos y más aún si es para aprender cosas nuevas. Mi interés a mediano plazo es especializarme como desarrolladora Back End, seguir aprendiendo sobre mi trabajo y estar al día en este rubro.</p>
+              <p>¡Hola! Mi nombre es Leslie y soy Desarrolladora web Front End, me apasiona la programación y el querer seguir siempre aprendiendo más sobre nuevas tecnologías. Soy creativa, responsable y autodidacta. Siempre estoy dispuesta a nuevos retos y más aún si es para aprender cosas nuevas.</p>
             </div>
             <div class="col-xs-12 description__skills">
               <h2 class="animated slideInLeft hvr-underline-from-left">SKILLS</h2>
             </div>
-            <!-- <div class="col-xs-12 description__skills-item">
-              <div class="col-xs-3"><img src="img/skills/html5.png" alt="" class="img-responsive"></div>
-              <div class="col-xs-3"><img src="img/skills/css3.png" alt="" class="img-responsive"></div>
-              <div class="col-xs-3"><img src="img/skills/js.png" alt="" class="img-responsive"></div>
-              <div class="col-xs-3"><img src="img/skills/jquery.gif" alt="" class="img-responsive"></div>
-              <div class="col-xs-3"><img src="img/skills/sass.png" alt="" class="img-responsive"></div>
-              <div class="col-xs-3"><img src="img/skills/bootstrap.png" alt="" class="img-responsive"></div>
-              <div class="col-xs-3"><img src="img/skills/materialize.png" alt="" class="img-responsive"></div>
-              <div class="col-xs-3"><img src="img/skills/github.png" alt="" class="img-responsive"></div>
-            </div> -->
+            <div class="col-xs-12 description__skills-item">
+              <div class="col-xs-3 hvr-sweep-to-right"><p class="">HTML5</p></div>
+              <div class="col-xs-3 hvr-sweep-to-right"><p class="">CSS3</p></div>
+              <div class="col-xs-3 hvr-sweep-to-right"><p class="">JAVASCRIPT</p></div>
+              <div class="col-xs-3 hvr-sweep-to-right"><p class="">JQUERY</p></div>
+              <div class="col-xs-3 hvr-sweep-to-right"><p class="">BOOTSTRAP</p></div>
+              <div class="col-xs-3 hvr-sweep-to-right"><p class="">MATERIALIZE</p></div>
+              <div class="col-xs-3 hvr-sweep-to-right"><p class="">GIT</p></div>
+              <div class="col-xs-3 hvr-sweep-to-right"><p class="">SASS</p></div>
+              <div class="col-xs-3 hvr-sweep-to-right"><p class="">GULP</p></div>
+            </div>
           </div>
         </div>
       </section>
@@ -87,6 +87,7 @@
           <div class="row portafolio">
             <div class="col-xs-12">
               <h2 class=" hvr-underline-from-left">PORTAFOLIO</h2>
+              <h4>Te invitos a ver mis pricipales proyectos realizados en Laboratoria</h4>
             </div>
             <div class="col-xs-12 col-md-4 portafolio__item animated zoomIn hvr-float-shadow " data-toggle="modal" data-target="#myModal">
               <img src="img/labcar-portafolio.png" alt="" style="width:100%;">
@@ -162,7 +163,7 @@
     </footer>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.fullpage.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/nav-scroll.js"></script>
   </body>
 </html>
