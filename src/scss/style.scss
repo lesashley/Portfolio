@@ -280,6 +280,10 @@ header{
       border-radius: 10px;
       background-color: $color-principal;
       @include color-font(#fff, 1.8rem);
+      a{
+        @include color-font(#fff, 1.8rem);
+        text-decoration: none;
+      }
     }
   }
 }

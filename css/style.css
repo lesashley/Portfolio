@@ -207,6 +207,10 @@ header {
     background-color: #792a3e;
     color: #fff;
     font-size: 1.8rem; }
+    .contact__cv button a {
+      color: #fff;
+      font-size: 1.8rem;
+      text-decoration: none; }
 
 #footer {
   height: 10vh;
