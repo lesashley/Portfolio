@@ -1,7 +1,7 @@
 @import "colors";
 
 *{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto Mono', monospace;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -43,7 +43,7 @@ header{
   background-color: rgba(255, 255, 255, 0);
   border-color: rgba(255, 255, 255, 0);
   & .navbar-nav>li>a{
-    border-radius: 10px;
+    // border-radius: 10px;
     font-weight: bold;
     color: white;
     transition: all 0.5s ease;
@@ -54,7 +54,7 @@ header{
   }
   & .navbar-nav.pullUpDown>li>a:hover{
     color: #555;
-    border-radius: 10px;
+    // border-radius: 10px;
     background-color: #e7e7e7;
   }
   & .navbar-collapse{
@@ -76,7 +76,9 @@ header{
 }
 .header-hidden .logo{
   display: none;
+
 }
+
 #fondo{
   background-size: cover;
   background-image: url(../img/fondo-aurora-3.jpg);
@@ -145,7 +147,7 @@ header{
       margin: 30px 10px;
       background-color: rgba(121, 42, 62, 0.68);
       border: 2px solid $color-principal;
-      font-weight: bold;
+      font-weight: 400;
       width: 150px;
       a{
         @include color-font(#fff, 2rem);
@@ -162,7 +164,6 @@ header{
   border-right: .20em solid #fff; /*ancho del cursor*/
   white-space: nowrap;
   margin: 0 auto;
-  letter-spacing: .15em;
   animation:
     /*typing 3.5s steps(40, end),*/
     read 7s steps(50) infinite alternate,
@@ -177,16 +178,18 @@ header{
 /*Efecto del cursor*/
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: $color-principal }
+  50% { border-color: $bgcolor-principal }
 }
 /******/
 
 .description{
   padding-bottom: 100px;
   &__img{
+    text-align: center;
     display: inline-block;
     img{
       width: 80%;
+      clip-path:circle();
     }
   }
   &__text{
@@ -195,12 +198,20 @@ header{
     @include color-font(#000, 1.8rem);
   }
   &__skills-item{
+    @extend %flex-box;
+    flex-wrap: wrap;
     & div{
       text-align: center;
       margin: 10px 0;
       font-size: 2rem;
       font-weight: bold;
-      letter-spacing: 1.3px;
+      padding-top: 8px;
+      i{
+        // margin-left: 20px;
+      }
+      img{
+        margin-left: 20px;
+      }
     }
   }
 }
@@ -240,6 +251,14 @@ header{
       }
     }
   }
+  .modal-body {
+    img{
+      margin: 20px 0;
+    }
+  }
+  .modal-header{
+    text-align: center;
+  }
   .modal-title {
     font-weight: bold;
   }
@@ -253,15 +272,14 @@ header{
 
 .contact{
   padding-bottom: 20px;
-  & .center-block{
-    text-align: center;
-  }
   &__info{
     i{
-      // text-align: left;
       @include color-font($color-principal, 2rem);
       margin-right: 10px;
     }
+  }
+  &__gif{
+    text-align: center;
   }
   &__redes{
     li{
@@ -274,6 +292,7 @@ header{
     }
   }
   &__cv{
+    text-align: center;
     button{
       border: 0;
       padding: 15px;
@@ -281,8 +300,8 @@ header{
       background-color: $color-principal;
       @include color-font(#fff, 1.8rem);
       a{
-        @include color-font(#fff, 1.8rem);
         text-decoration: none;
+        color: #fff;
       }
     }
   }
@@ -310,5 +329,11 @@ header{
   }
   %title-section{
     font-size: 3rem;
+  }
+  .contact{
+    text-align: center;
+    div{
+      margin: 15px 0;
+    }
   }
 }
