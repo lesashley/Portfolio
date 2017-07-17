@@ -198,17 +198,12 @@ header{
     @include color-font(#000, 1.8rem);
   }
   &__skills-item{
-    @extend %flex-box;
-    flex-wrap: wrap;
     & div{
       text-align: center;
       margin: 10px 0;
       font-size: 2rem;
       font-weight: bold;
       padding-top: 8px;
-      i{
-        // margin-left: 20px;
-      }
       img{
         margin-left: 20px;
       }
@@ -265,7 +260,6 @@ header{
   h5{
     font-weight: 500;
     font-size: 1.8rem;
-
   }
 }
 
@@ -332,8 +326,5 @@ header{
   }
   .contact{
     text-align: center;
-    div{
-      margin: 15px 0;
-    }
   }
 }

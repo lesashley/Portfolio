@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box; }
 
-#fondo, .description__skills-item, .portafolio__item, #footer {
+#fondo, .portafolio__item, #footer {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -145,16 +145,14 @@ header {
     float: left;
     color: #000;
     font-size: 1.8rem; }
-  .description__skills-item {
-    flex-wrap: wrap; }
-    .description__skills-item div {
-      text-align: center;
-      margin: 10px 0;
-      font-size: 2rem;
-      font-weight: bold;
-      padding-top: 8px; }
-      .description__skills-item div img {
-        margin-left: 20px; }
+  .description__skills-item div {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 8px; }
+    .description__skills-item div img {
+      margin-left: 20px; }
 
 #projects {
   background-color: #DBCBC4;
@@ -242,8 +240,6 @@ header {
     font-size: 3rem; }
 
   .contact {
-    text-align: center; }
-    .contact div {
-      margin: 15px 0; } }
+    text-align: center; } }
 
 /*# sourceMappingURL=style.css.map */
