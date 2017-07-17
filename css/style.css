@@ -61,7 +61,7 @@ header {
 
 #fondo {
   background-size: cover;
-  background-image: url(https://static.pexels.com/photos/506165/pexels-photo-506165.jpeg);
+  background-image: url(../img/fondo-aurora-3.jpg);
   background-attachment: fixed;
   background-position: 10% 30%;
   height: 100vh;
