@@ -1,6 +1,6 @@
  $('.menu').click(function(e){
  	e.preventDefault();
- 	$('html, body').stop().animate({scrollTop: $($(this).attr('href')).offset().top}, 1000);
+ 	$('html, body').stop().animate({scrollTop: $($('.menu').attr('href')).offset().top}, 1000);
  });
 
 (_ =>{
