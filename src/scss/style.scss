@@ -38,6 +38,7 @@ header{
   z-index: 5;
   transition: all 0.7s ease;
 }
+
 .navbar-default{
   background-color: rgba(255, 255, 255, 0);
   border-color: rgba(255, 255, 255, 0);
@@ -55,6 +56,9 @@ header{
     color: #555;
     border-radius: 10px;
     background-color: #e7e7e7;
+  }
+  & .navbar-collapse{
+    border:0;
   }
   & img{
     width: 50px;
@@ -239,6 +243,14 @@ header{
       }
     }
   }
+  .modal-title {
+    font-weight: bold;
+  }
+  h5{
+    font-weight: 500;
+    font-size: 1.8rem;
+
+  }
 }
 
 
@@ -282,4 +294,20 @@ header{
   font-weight: bold;
   background-color: $color-secundario;
   color: #fff;
+}
+
+@media (max-width:750px){
+  .typewriter h1{
+    width: 65%;
+    font-size: 1.8rem;
+  }
+  .name{
+    font-size: 6rem;
+  }
+  .header-mobile{
+    background-color: rgb(62, 62, 62);
+  }
+  %title-section{
+    font-size: 3rem;
+  }
 }

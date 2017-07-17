@@ -42,6 +42,8 @@ header {
     color: #555;
     border-radius: 10px;
     background-color: #e7e7e7; }
+  .navbar-default .navbar-collapse {
+    border: 0; }
   .navbar-default img {
     width: 50px; }
   .navbar-default .logo-hidden {
@@ -177,6 +179,11 @@ header {
       color: #fff;
       font-size: auto;
       font-weight: bold; }
+.modal .modal-title {
+  font-weight: bold; }
+.modal h5 {
+  font-weight: 500;
+  font-size: 1.8rem; }
 
 .contact {
   padding-bottom: 20px; }
@@ -207,5 +214,19 @@ header {
   font-weight: bold;
   background-color: #4b4b4b;
   color: #fff; }
+
+@media (max-width: 750px) {
+  .typewriter h1 {
+    width: 65%;
+    font-size: 1.8rem; }
+
+  .name {
+    font-size: 6rem; }
+
+  .header-mobile {
+    background-color: #3e3e3e; }
+
+  h2 {
+    font-size: 3rem; } }
 
 /*# sourceMappingURL=style.css.map */
