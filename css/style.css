@@ -42,7 +42,7 @@ header {
     background-color: #e7e7e7; }
   .navbar-default .navbar-collapse {
     border: 0;
-    margin: 0 55px; }
+    padding: 0 80px; }
   .navbar-default img {
     width: 50px; }
   .navbar-default .logo-hidden {
@@ -250,8 +250,8 @@ header {
   .contact {
     text-align: center; }
 
-  .navbar-collapse {
-    margin: auto; }
+  .navbar-default .navbar-collapse {
+    padding: initial; }
 
   .header-hidden {
     display: none; } }

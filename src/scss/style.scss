@@ -60,9 +60,12 @@ header{
     color: #555;
     background-color: #e7e7e7;
   }
+  & .navbar-header{
+
+  }
   & .navbar-collapse{
     border:0;
-    margin: 0 55px;
+    padding: 0 80px;
   }
   & img{
     width: 50px;
@@ -344,8 +347,9 @@ header{
   .contact{
     text-align: center;
   }
-  .navbar-collapse{
-    margin: auto;
+  .navbar-default .navbar-collapse{
+    padding: initial;
+
   }
   .header-hidden{
     display: none;
