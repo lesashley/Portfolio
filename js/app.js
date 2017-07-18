@@ -5,19 +5,17 @@ $('.menu').click(function(e){
 
 
 $(document).on('scroll', function () {
-    if ( $(this).scrollTop() > 220 ) {
-      $('.description__title h2').addClass('animated slideInLeft');
-      $('.description__skills h2').addClass('animated slideInLeft');
-    }
-    if ( $(this).scrollTop() > 1200 ) {
-      $('.portafolio__item').addClass('animated zoomIn');
-    }
-  });
-
-
-// $('.preload').show(9000);
-// $('.body-container').hide();
-// $(document).ready(function(){
-//   $('.preload').hide(1000);
-//   $('.body-container').show(2000)
-//   });
+  const scrollTop = $(window).scrollTop();
+  if ( scrollTop > 220 ) {
+    $('#header').addClass('header-hidden');
+  }
+  else{
+    $('#header').removeClass('header-hidden');
+  }
+  if ( scrollTop > 1200 ) {
+    $('.portafolio__item').addClass('animated zoomIn');
+  }
+  if ( scrollTop > 0 ) {
+    $('.portafolio__item').addClass('animated zoomIn');
+  }
+});
