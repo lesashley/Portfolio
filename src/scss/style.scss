@@ -59,6 +59,7 @@ header{
   }
   & .navbar-collapse{
     border:0;
+    margin: 0 55px;
   }
   & img{
     width: 50px;
@@ -183,9 +184,9 @@ header{
 /******/
 
 .description{
-  padding-bottom: 100px;
+  padding: 60px 0;
+  text-align: center;
   &__img{
-    text-align: center;
     display: inline-block;
     img{
       width: 80%;
@@ -198,8 +199,8 @@ header{
     @include color-font(#000, 1.8rem);
   }
   &__skills-item{
+    @extend %flex-box;
     & div{
-      text-align: center;
       margin: 10px 0;
       font-size: 2rem;
       font-weight: bold;
@@ -216,8 +217,12 @@ header{
   padding-bottom: 30px;
 }
 .portafolio{
+  padding: 60px 0;
   & h2{
     margin-bottom: 0;
+  }
+  &__title{
+    margin-bottom: 20px;
   }
   &__item{
     padding: 20px;
@@ -248,7 +253,8 @@ header{
   }
   .modal-body {
     img{
-      margin: 20px 0;
+      text-align: center;
+      margin: 30px auto;
     }
   }
   .modal-header{
@@ -265,7 +271,7 @@ header{
 
 
 .contact{
-  padding-bottom: 20px;
+  padding: 60px 0;
   &__info{
     i{
       @include color-font($color-principal, 2rem);

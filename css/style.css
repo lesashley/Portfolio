@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box; }
 
-#fondo, .portafolio__item, #footer {
+#fondo, .description__skills-item, .portafolio__item, #footer {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -41,7 +41,8 @@ header {
     color: #555;
     background-color: #e7e7e7; }
   .navbar-default .navbar-collapse {
-    border: 0; }
+    border: 0;
+    margin: 0 55px; }
   .navbar-default img {
     width: 50px; }
   .navbar-default .logo-hidden {
@@ -133,9 +134,9 @@ header {
     border-color: #DBCBC4; } }
 /******/
 .description {
-  padding-bottom: 100px; }
+  padding: 60px 0;
+  text-align: center; }
   .description__img {
-    text-align: center;
     display: inline-block; }
     .description__img img {
       width: 80%;
@@ -146,7 +147,6 @@ header {
     color: #000;
     font-size: 1.8rem; }
   .description__skills-item div {
-    text-align: center;
     margin: 10px 0;
     font-size: 2rem;
     font-weight: bold;
@@ -158,17 +158,21 @@ header {
   background-color: #DBCBC4;
   padding-bottom: 30px; }
 
-.portafolio h2 {
-  margin-bottom: 0; }
-.portafolio__item {
-  padding: 20px;
-  text-align: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-  transition: all 0.4s ease;
-  cursor: zoom-in; }
-  .portafolio__item h3 {
-    font-weight: bold; }
+.portafolio {
+  padding: 60px 0; }
+  .portafolio h2 {
+    margin-bottom: 0; }
+  .portafolio__title {
+    margin-bottom: 20px; }
+  .portafolio__item {
+    padding: 20px;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    transition: all 0.4s ease;
+    cursor: zoom-in; }
+    .portafolio__item h3 {
+      font-weight: bold; }
 
 .modal__btn {
   text-align: center; }
@@ -181,7 +185,8 @@ header {
       font-size: auto;
       font-weight: bold; }
 .modal .modal-body img {
-  margin: 20px 0; }
+  text-align: center;
+  margin: 30px auto; }
 .modal .modal-header {
   text-align: center; }
 .modal .modal-title {
@@ -191,7 +196,7 @@ header {
   font-size: 1.8rem; }
 
 .contact {
-  padding-bottom: 20px; }
+  padding: 60px 0; }
   .contact__info i {
     color: #792a3e;
     font-size: 2rem;
