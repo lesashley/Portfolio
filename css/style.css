@@ -132,7 +132,7 @@ header {
     border-color: #DBCBC4; } }
 /******/
 .description {
-  padding: 60px 0;
+  padding: 60px 0 70px 0;
   text-align: center; }
   .description__img {
     display: inline-block; }
@@ -147,7 +147,7 @@ header {
     .description__text img {
       margin: 10px; }
   .description__skills {
-    padding-top: 60px; }
+    margin-top: 80px; }
   .description__skills--item {
     flex-wrap: wrap; }
     .description__skills--item div {
