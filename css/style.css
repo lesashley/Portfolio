@@ -137,9 +137,10 @@ header {
   .description__img {
     display: inline-block; }
     .description__img img {
-      width: 80%;
+      width: 70%;
       clip-path: circle(); }
   .description__text {
+    text-align: justify;
     margin-top: 40px;
     float: left;
     color: #000;
@@ -188,6 +189,8 @@ header {
       color: #fff;
       font-size: auto;
       font-weight: bold; }
+.modal .modal-body h5 {
+  font-weight: bold; }
 .modal .modal-body img {
   text-align: center; }
 .modal .modal-header {
@@ -200,12 +203,18 @@ header {
 
 .contact {
   padding: 60px 0; }
-  .contact__info i {
-    color: #792a3e;
-    font-size: 3rem;
-    margin-right: 10px; }
+  .contact__info {
+    font-size: 1.5rem; }
+    .contact__info i {
+      color: #792a3e;
+      font-size: 2.5rem;
+      margin-right: 10px; }
+    .contact__info .fa-phone {
+      margin-right: 17px; }
   .contact__gif {
     text-align: center; }
+  .contact__redes div {
+    float: right; }
   .contact__redes li {
     list-style: none; }
     .contact__redes li a {
