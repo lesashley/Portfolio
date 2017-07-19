@@ -196,11 +196,12 @@ header{
   &__img{
     display: inline-block;
     img{
-      width: 80%;
+      width: 70%;
       clip-path:circle();
     }
   }
   &__text{
+    text-align: justify;
     margin-top: 40px;
     float: left;
     @include color-font(#000, 1.8rem);
@@ -267,6 +268,9 @@ header{
     }
   }
   .modal-body {
+    h5{
+      font-weight: bold;
+    }
     img{
       text-align: center;
     }
@@ -287,15 +291,22 @@ header{
 .contact{
   padding: 60px 0;
   &__info{
+    font-size: 1.5rem;
     i{
-      @include color-font($color-principal, 3rem);
+      @include color-font($color-principal, 2.5rem);
       margin-right: 10px;
+    }
+    .fa-phone{
+      margin-right: 17px;
     }
   }
   &__gif{
     text-align: center;
   }
   &__redes{
+    div{
+      float: right;
+    }
     li{
       list-style: none;
       a{
