@@ -16,7 +16,6 @@ body{
 %title-section{
   color: $color-title;
   letter-spacing: .05em;
-  // font-family: 'Dosis', sans-serif;
   font-family: 'Quicksand', sans-serif;
   margin: 30px 0 23px 0;
   padding: 10px 0;
@@ -86,8 +85,7 @@ header{
 }
 
 #fondo{
-  background-size: cover;
-  background-image: url(../img/fondo-aurora-3.jpg);
+  background-image: url(../img/ep_naturalblack.png);
   background-attachment: fixed;
   background-position: 10% 30%;
   height: 100vh;
@@ -143,9 +141,6 @@ header{
     text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
              0px 8px 13px rgba(0,0,0,0.1),
              0px 18px 23px rgba(0,0,0,0.1);
-    // text-shadow:
-    // 4px 4px 0px #b682a9,
-    // 7px 7px 0px #8e7379 ;
   }
   &__button{
     margin: 0 auto;
@@ -357,6 +352,11 @@ header{
   }
   .contact{
     text-align: center;
+    &__redes{
+      div{
+        float: none;
+      }
+    }
   }
   .navbar-default .navbar-collapse{
     padding: initial;
